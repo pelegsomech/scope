@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retain Case Study — Scope Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .case-hero { padding: var(--sp-32) 0 var(--sp-16); text-align: left; }
+    .case-visual { width: 100%; height: 400px; border-radius: var(--radius-xl); margin-bottom: var(--sp-16); }
+    .case-content { max-width: 800px; margin: 0 auto; color: var(--text-muted); font-size: 1.125rem; line-height: 1.7; }
+    .case-content h2 { color: var(--text-primary); font-family: 'Outfit', sans-serif; font-size: 2rem; margin: var(--sp-12) 0 var(--sp-4); }
+    .case-content p { margin-bottom: var(--sp-6); }
+    .tech-stack { display: flex; gap: var(--sp-4); flex-wrap: wrap; margin-top: var(--sp-8); }
+    .tech-tag { padding: var(--sp-2) var(--sp-4); background: rgba(255,255,255,0.05); border-radius: 100px; font-size: 0.875rem; color: var(--text-primary); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Scope<span>.</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="btn-ghost">← Back to Studio</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-bottom: var(--sp-32);">
+    <section class="case-hero reveal">
+      <span class="section-label">AI · Sales Automation</span>
+      <h1 class="cta-heading" style="margin-top: var(--sp-4); margin-bottom: var(--sp-6);">Retain.</h1>
+      <p style="font-size: 1.5rem; color: var(--text-muted); max-width: 600px;">The 24/7 AI sales agent that never sleeps.</p>
+    </section>
+
+    <div class="case-visual gradient-bg gradient-1 reveal"></div>
+
+    <article class="case-content reveal">
+      <h2>The Friction</h2>
+      <p>Sales teams leak revenue. Human SDRs miss calls, qualify leads inconsistently, and sleep. The friction is biological: humans cannot scale their availability without scaling costs.</p>
+
+      <h2>The Magic</h2>
+      <p>We built "Jim" — an autonomous AI salesman. Jim answers inbound calls in under 5 seconds. Jim doesn't read scripts; he converses, qualifies, and books appointments. He handles objections seamlessly and logs the structured data directly into the CRM.</p>
+
+      <h2>The Result</h2>
+      <p>An entire SDR layer replaced by software. Call drops went to zero. Lead qualification became an exact science. We didn't optimize the sales process; we deleted the human bottleneck completely.</p>
+      
+      <h2>Architecture & Stack</h2>
+      <div class="tech-stack">
+        <span class="tech-tag">Next.js 16</span>
+        <span class="tech-tag">React 19</span>
+        <span class="tech-tag">Clerk Auth</span>
+        <span class="tech-tag">Prisma</span>
+        <span class="tech-tag">Firebase</span>
+        <span class="tech-tag">LLM Agents</span>
+      </div>
+    </article>
+  </main>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-heading">Need to kill friction?</h2>
+        <a href="mailto:hello@scope.studio" class="cta-email">hello@scope.studio <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

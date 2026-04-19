@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scope — Product Studio for Complex Consumer Products</title>
+  <meta name="description" content="Scope is a product studio that helps ambitious companies design, build, and ship complex consumer products — from strategy to code." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◉</text></svg>" />
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="#" class="nav-logo">Scope<span>.</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#why">Why Us</a>
+        <a href="#work">Work</a>
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="reveal">We build products people <span class="accent-word">can't stop using.</span></h1>
+        <p class="hero-sub reveal">Scope is a product leadership studio for companies tackling complex consumer products. We embed as your product heads, managing design, engineering, and legal — so you ship faster, with fewer regrets.</p>
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-primary">Start a Project</a>
+          <a href="#services" class="btn btn-ghost">See how we work <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── SERVICES ─── -->
+  <section class="services" id="services">
+    <div class="container">
+      <span class="section-label reveal">What We Do</span>
+      <h2 class="section-heading reveal">Product leadership.<br />Executed seamlessly.</h2>
+      <p class="section-subtext reveal">We don't just advise; we embed. We act as your product leaders, orchestrating analysts, engineers, and designers to shape the product in real time.</p>
+
+      <div class="carousel-container reveal-stagger">
+        <div class="services-carousel" id="servicesCarousel">
+          <div class="carousel-slide">
+            <div class="carousel-image">
+              <img src="https://placehold.co/800x600/F0EFEB/222222?text=Strategy+Illustration" alt="Strategy Illustration Placeholder" />
+            </div>
+            <div class="carousel-text">
+              <span class="editorial-number">01</span>
+              <h3>Product Strategy</h3>
+              <p>We dissect markets, map user psychology, and define the product that actually needs to exist — not the one everyone assumes does.</p>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="carousel-image">
+              <img src="https://placehold.co/800x600/F0EFEB/222222?text=Management+Illustration" alt="Management Illustration Placeholder" />
+            </div>
+            <div class="carousel-text">
+              <span class="editorial-number">02</span>
+              <h3>Cross-Functional Management</h3>
+              <p>We lead the orchestra. We align your designers, engineers, analysts, and legal teams to move as a unified, high-velocity front.</p>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="carousel-image">
+              <img src="https://placehold.co/800x600/F0EFEB/222222?text=Leadership+Illustration" alt="Leadership Illustration Placeholder" />
+            </div>
+            <div class="carousel-text">
+              <span class="editorial-number">03</span>
+              <h3>Embedded Leadership</h3>
+              <p>We don't do handoffs or act as passive advisors. We embed directly into your organization, establishing culture, defining roadmaps, and owning the outcomes.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-controls">
+          <button class="carousel-btn prev-btn" id="prevBtn">←</button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn next-btn" id="nextBtn">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── PROCESS ─── -->
+  <section class="process" id="process">
+    <div class="container">
+      <span class="section-label reveal">How We Work</span>
+      <h2 class="section-heading reveal">Scope. Shape. Ship.</h2>
+      <p class="section-subtext reveal">A three-phase engagement model designed to eliminate waste and move at the speed of insight.</p>
+
+      <div class="process-steps reveal-stagger">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3>Scope</h3>
+          <p>We immerse in your domain, interview stakeholders, and define a razor-sharp product brief. No ambiguity. No bloat. Just the problem, distilled.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h3>Shape</h3>
+          <p>Design and architecture happen in parallel. We prototype, test, and iterate until the product feels right — not just looks right.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h3>Ship</h3>
+          <p>Production code, deployed. We build incrementally, ship continuously, and stay embedded until the product is live and thriving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── WHY US ─── -->
+  <section class="why-us" id="why">
+    <div class="container">
+      <span class="section-label reveal">Why Scope</span>
+      <h2 class="section-heading reveal">Not another agency.</h2>
+      <p class="section-subtext reveal">We're operators who build. We've shipped products in regulated, high-complexity markets — and we bring that rigor to everything we touch.</p>
+
+      <div class="why-grid reveal-stagger">
+        <div class="why-card">
+          <h3><span class="icon">⚙</span> Complexity is our comfort zone</h3>
+          <p>Insurance, fintech, health, automotive — we thrive in regulated markets where the product has to be bulletproof and the UX has to be effortless.</p>
+        </div>
+        <div class="why-card">
+          <h3><span class="icon">🤖</span> AI-native thinking</h3>
+          <p>Every process we design starts with "Can an AI do this?" We don't bolt on intelligence — we architect around it from day one.</p>
+        </div>
+        <div class="why-card">
+          <h3><span class="icon">✦</span> Embedded, not advisory</h3>
+          <p>No account managers. No passive consultants. The people who define the strategy are the exact same people standing shoulder-to-shoulder with your execution teams.</p>
+        </div>
+        <div class="why-card">
+          <h3><span class="icon">◎</span> Obsessive craft</h3>
+          <p>We debate chamfers. We agonize over kerning. Not because it's vanity — because users feel the quality in every subconscious interaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── WORK ─── -->
+  <section class="work" id="work">
+    <div class="container">
+      <span class="section-label reveal">Selected Work</span>
+      <h2 class="section-heading reveal">Products we've shaped.</h2>
+      <p class="section-subtext reveal">A selection of projects where we partnered deeply to design and build high-impact consumer products.</p>
+
+      <div class="work-grid work-grid-3 reveal-stagger">
+        <div class="work-card">
+          <div class="work-card-visual">
+            <img src="/Users/pelegsomech/.gemini/antigravity/brain/0af34511-41c8-45e0-a558-34a6a06a76a5/img_retain_1776566332783.png" alt="Retain AI Sales agent visualization" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div class="work-card-content">
+            <div class="work-card-tag">AI · Sales Automation</div>
+            <h3>Retain — The 24/7 AI sales agent that never sleeps</h3>
+            <p>Built an autonomous AI salesman ("Jim") that answers calls in under 5 seconds, qualifies leads with smart filtering, and books appointments — replacing an entire SDR team.</p>
+            <a href="case-study-retain.html" class="btn-ghost" style="margin-top: var(--sp-4); display: inline-block;">Read Case Study <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-card-visual">
+            <img src="/Users/pelegsomech/.gemini/antigravity/brain/0af34511-41c8-45e0-a558-34a6a06a76a5/img_biopulse_1776566358060.png" alt="Clinical Alpha AI Biotech visualization" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div class="work-card-content">
+            <div class="work-card-tag">Biotech · AI Research Platform</div>
+            <h3>Clinical Alpha — Multi-agent intelligence for biotech investors</h3>
+            <p>Designed and engineered a research platform that deploys AI agent squads to surface alpha from clinical trials, SEC filings, and insider trades in real-time.</p>
+            <a href="case-study-clinical-alpha.html" class="btn-ghost" style="margin-top: var(--sp-4); display: inline-block;">Read Case Study <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-card-visual">
+            <img src="/Users/pelegsomech/.gemini/antigravity/brain/0af34511-41c8-45e0-a558-34a6a06a76a5/img_tripspark_1776566372441.png" alt="Trip Spark topographic map visualization" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div class="work-card-content">
+            <div class="work-card-tag">Travel · Consumer App</div>
+            <h3>Trip Spark — AI-powered travel planning that unfolds</h3>
+            <p>Conceived and shipped a travel itinerary platform with rich mapping, real-time collaboration, and an "unfolding" UX paradigm where plans reveal themselves organically.</p>
+            <a href="case-study-trip-spark.html" class="btn-ghost" style="margin-top: var(--sp-4); display: inline-block;">Read Case Study <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── PHILOSOPHY ─── -->
+  <section class="philosophy" id="philosophy">
+    <div class="container">
+      <div class="philosophy-block reveal">
+        <p class="philosophy-quote">"We don't build products.<br />We build <em>new realities</em> — where the friction of being human is a little less heavy."</p>
+        <p class="philosophy-body">Scope exists because we believe the best products are built by small, obsessive teams who refuse to separate thinking from making. Strategy without craft is a slide deck. Craft without strategy is decoration. We do both.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── CTA ─── -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2 class="cta-heading">Let's build something<br />worth obsessing over.</h2>
+        <p class="cta-sub">Have a product challenge? A complex market? An ambitious idea? Let's talk.</p>
+        <a href="mailto:hello@scope.studio" class="cta-email">
+          hello@scope.studio <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-copy">© 2025 Scope Studio. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">𝕏</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+  <script>
+    // Reveal animations
+    const reveals = document.querySelectorAll('.reveal, .reveal-stagger > *');
+    const revealOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      });
+    }, revealOptions);
+    reveals.forEach(el => revealObserver.observe(el));
+
+    // Carousel Logic
+    const carouselContainer = document.getElementById('servicesCarousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dotsContainer = document.getElementById('carouselDots');
+    const slides = document.querySelectorAll('.carousel-slide');
+    
+    let currentSlide = 0;
+
+    // Initialize dots
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    });
+    const dots = document.querySelectorAll('.dot');
+
+    function updateCarousel() {
+      carouselContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+      });
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateCarousel();
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateCarousel();
+    }
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+  </script>
+</body>
+</html>
