@@ -1,106 +1,75 @@
 /* ============================================================
-   SCOPE — Main JavaScript
+   SCOPE — main.js
+   Minimal, no dependencies. Reveal + nav state + smooth scroll.
    ============================================================ */
 
 (function () {
   'use strict';
 
-  // ─── SCROLL-REVEAL ───
-  const reveals = document.querySelectorAll('.reveal, .reveal-stagger');
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px 0px -60px 0px',
-    threshold: 0.15,
-  };
+  // ─── Scroll reveal ───
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  reveals.forEach((el) => revealObserver.observe(el));
-
-
-  // ─── NAV SCROLL STATE ───
-  const nav = document.getElementById('nav');
-  let lastScroll = 0;
-
-  function handleNavScroll() {
-    const scrollY = window.scrollY;
-    if (scrollY > 40) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-    lastScroll = scrollY;
+    reveals.forEach((el) => io.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add('visible'));
   }
 
-  window.addEventListener('scroll', handleNavScroll, { passive: true });
-  handleNavScroll(); // init
+  // ─── Nav scroll state ───
+  const nav = document.getElementById('nav');
+  const setNavState = () => {
+    if (!nav) return;
+    nav.classList.toggle('scrolled', window.scrollY > 32);
+  };
+  window.addEventListener('scroll', setNavState, { passive: true });
+  setNavState();
 
+  // ─── Mobile nav toggle ───
+  const toggle = document.getElementById('nav-toggle');
+  const links  = document.getElementById('nav-links');
 
-  // ─── MOBILE NAV TOGGLE ───
-  const navToggle = document.getElementById('nav-toggle');
-  const navLinks = document.getElementById('nav-links');
-
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    // Animate hamburger → X
-    const spans = navToggle.querySelectorAll('span');
-    if (navLinks.classList.contains('open')) {
-      spans[0].style.transform = 'rotate(45deg) translate(4px, 4px)';
-      spans[1].style.opacity = '0';
-      spans[2].style.transform = 'rotate(-45deg) translate(4px, -4px)';
-    } else {
-      spans[0].style.transform = 'none';
-      spans[1].style.opacity = '1';
-      spans[2].style.transform = 'none';
-    }
-  });
-
-  // Close nav on link click (mobile)
-  navLinks.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      if (navLinks.classList.contains('open')) {
-        navLinks.classList.remove('open');
-        const spans = navToggle.querySelectorAll('span');
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-      }
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
     });
-  });
 
+    links.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        if (links.classList.contains('open')) {
+          links.classList.remove('open');
+          toggle.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  }
 
-  // ─── SMOOTH SCROLL ───
+  // ─── Smooth scroll with nav offset ───
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
-      if (href === '#') return;
-      e.preventDefault();
+      if (!href || href === '#') return;
       const target = document.querySelector(href);
-      if (target) {
-        const offset = 80;
-        const top = target.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
-      }
+      if (!target) return;
+      e.preventDefault();
+      const offset = 72;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
     });
   });
 
-
-  // ─── PARALLAX HERO GLOW ───
-  const hero = document.querySelector('.hero');
-  if (hero) {
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      if (scrollY < window.innerHeight) {
-        hero.style.setProperty('--parallax-y', `${scrollY * 0.3}px`);
-      }
-    }, { passive: true });
-  }
+  // ─── Footer year ───
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
 
 })();
