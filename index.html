@@ -2,32 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Scope Studio — Custom AI Software</title>
-  <meta name="description" content="Scope Studio builds custom AI software for businesses. We design, engineer, and ship — end to end." />
-  <meta property="og:title" content="Scope Studio — Custom AI Software" />
-  <meta property="og:description" content="You have a problem. We build the AI to solve it." />
+  <meta name="description" content="Scope Studio designs and builds custom AI software for businesses — end to end." />
+  <meta property="og:title" content="Scope Studio" />
+  <meta property="og:description" content="Custom AI software for businesses." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#EAE3D2" />
+  <meta name="theme-color" content="#F5F2EB" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='none' stroke='%231E1C18' stroke-width='6'/></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='4' y='4' width='24' height='24' rx='6' fill='%230A0907'/><path d='M12 20a4 4 0 118 0' stroke='%23D85A3A' stroke-width='2' stroke-linecap='round' fill='none'/></svg>" />
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="wrap nav-inner">
-      <a href="#top" class="logo">
-        <span class="logo-ring" aria-hidden="true"></span>
-        <span>Scope</span>
+      <a href="#top" class="logo" aria-label="Scope Studio">
+        <svg class="logo-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="26" height="26" rx="7" fill="currentColor" opacity="0.04" stroke="currentColor" stroke-opacity="0.14"/>
+          <circle cx="14" cy="14" r="6.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <circle cx="14" cy="14" r="2.2" fill="var(--accent)"/>
+        </svg>
+        <span class="logo-word">Scope</span>
+        <span class="logo-badge">Studio</span>
       </a>
+
+      <div class="nav-center">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+      </div>
+
       <a href="mailto:hello@scope.studio?subject=Project%20inquiry" class="nav-cta">
-        Get in touch <span aria-hidden="true">↗</span>
+        <span>Start a project</span>
+        <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 L9 3 M5 3 L9 3 L9 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
       </a>
     </div>
   </nav>
@@ -35,197 +48,285 @@
 
   <!-- HERO -->
   <header class="hero" id="top">
-    <div class="wrap">
-      <p class="hero-label reveal">
-        <span class="pulse" aria-hidden="true"></span>
-        AI Product Studio &nbsp;·&nbsp; Los Angeles
-      </p>
-      <h1 class="hero-h reveal">
-        We build AI software<br/>
-        <em>around your business.</em>
-      </h1>
-      <p class="hero-sub reveal">
-        You have a problem. We build the AI to solve it —
-        designed for your team, shipped to production.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="mailto:hello@scope.studio?subject=Project%20inquiry" class="btn btn-dark">
-          Start a project <span aria-hidden="true">→</span>
-        </a>
-        <a href="#work" class="btn btn-ghost">See our work</a>
+    <div class="wrap hero-wrap">
+
+      <div class="hero-content">
+        <div class="hero-label">
+          <span class="hero-label-dot" aria-hidden="true"></span>
+          <span>Now taking Q2 engagements</span>
+        </div>
+
+        <h1 class="hero-h">
+          <span class="hero-h-line">Custom AI software,</span>
+          <span class="hero-h-line hero-h-accent">built around your business.</span>
+        </h1>
+
+        <p class="hero-sub">
+          We design and ship AI products for companies that need
+          more than a demo. Strategy, design, engineering — one team.
+        </p>
+
+        <div class="hero-actions">
+          <a href="mailto:hello@scope.studio?subject=Project%20inquiry" class="btn btn-primary">
+            Start a project
+            <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 7 H11.5 M8 3.5 L11.5 7 L8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </a>
+          <a href="#work" class="btn btn-secondary">See our work</a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-n">11</span>
+            <span class="trust-l">Products shipped</span>
+          </div>
+          <span class="trust-div" aria-hidden="true"></span>
+          <div class="trust-item">
+            <span class="trust-n">8–16 wk</span>
+            <span class="trust-l">Typical engagement</span>
+          </div>
+          <span class="trust-div" aria-hidden="true"></span>
+          <div class="trust-item">
+            <span class="trust-n">100%</span>
+            <span class="trust-l">You own the code</span>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="hero-stats reveal">
-      <div class="wrap hero-stats-inner">
-        <div class="stat">
-          <span class="stat-n">8–16</span>
-          <span class="stat-l">Weeks to ship</span>
+
+      <!-- Hero visual (desktop) -->
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 420 420" fill="none" class="hero-viz-svg">
+          <defs>
+            <radialGradient id="hg1" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#D85A3A" stop-opacity="0.16"/>
+              <stop offset="100%" stop-color="#D85A3A" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="210" cy="210" r="200" fill="url(#hg1)"/>
+          <!-- concentric rings -->
+          <circle cx="210" cy="210" r="180" stroke="#0A0907" stroke-opacity="0.06" stroke-width="1"/>
+          <circle cx="210" cy="210" r="140" stroke="#0A0907" stroke-opacity="0.08" stroke-width="1"/>
+          <circle cx="210" cy="210" r="100" stroke="#0A0907" stroke-opacity="0.10" stroke-width="1"/>
+          <circle cx="210" cy="210" r="60" stroke="#0A0907" stroke-opacity="0.14" stroke-width="1"/>
+          <!-- orbital dots -->
+          <circle cx="210" cy="30" r="3" fill="#0A0907"/>
+          <circle cx="390" cy="210" r="3" fill="#0A0907" opacity="0.5"/>
+          <circle cx="70" cy="210" r="3" fill="#0A0907" opacity="0.3"/>
+          <circle cx="300" cy="110" r="3" fill="#0A0907" opacity="0.7"/>
+          <!-- center accent -->
+          <circle cx="210" cy="210" r="18" fill="#D85A3A"/>
+          <circle cx="210" cy="210" r="32" stroke="#D85A3A" stroke-width="1" stroke-opacity="0.5"/>
+          <!-- cross hair -->
+          <line x1="210" y1="195" x2="210" y2="225" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="195" y1="210" x2="225" y2="210" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+
+        <!-- Floating data chips -->
+        <div class="viz-chip viz-chip-1">
+          <span class="viz-chip-k">Scope</span>
+          <span class="viz-chip-v">active</span>
         </div>
-        <div class="stat-div" aria-hidden="true"></div>
-        <div class="stat">
-          <span class="stat-n">100%</span>
-          <span class="stat-l">You own the code</span>
+        <div class="viz-chip viz-chip-2">
+          <span class="viz-chip-k">Shipping</span>
+          <span class="viz-chip-v">3 products</span>
         </div>
-        <div class="stat-div" aria-hidden="true"></div>
-        <div class="stat">
-          <span class="stat-n">2</span>
-          <span class="stat-l">Seats open now</span>
-        </div>
-        <div class="stat-div" aria-hidden="true"></div>
-        <div class="stat">
-          <span class="stat-n">End-to-end</span>
-          <span class="stat-l">Strategy to launch</span>
+        <div class="viz-chip viz-chip-3">
+          <span class="viz-chip-k">Based</span>
+          <span class="viz-chip-v">Los Angeles</span>
         </div>
       </div>
+
     </div>
   </header>
 
 
-  <!-- WHAT WE DO -->
-  <section class="section" id="services">
-    <div class="wrap">
-      <p class="label reveal">What we do</p>
-      <div class="services-grid">
-
-        <div class="service-card reveal">
-          <span class="service-icon" aria-hidden="true">⬡</span>
-          <h2 class="service-title">Workflow<br/>Automation</h2>
-          <p class="service-desc">Replace slow, manual operations with AI that runs 24/7 and gets smarter over time.</p>
-          <ul class="service-examples">
-            <li>Document processing</li>
-            <li>Data extraction & routing</li>
-            <li>Approval & review pipelines</li>
-          </ul>
-        </div>
-
-        <div class="service-card reveal">
-          <span class="service-icon" aria-hidden="true">◈</span>
-          <h2 class="service-title">Internal<br/>Tools</h2>
-          <p class="service-desc">AI-powered dashboards, decision support, and research platforms built for your team.</p>
-          <ul class="service-examples">
-            <li>Intelligence platforms</li>
-            <li>Analyst co-pilots</li>
-            <li>Operations dashboards</li>
-          </ul>
-        </div>
-
-        <div class="service-card reveal">
-          <span class="service-icon" aria-hidden="true">◎</span>
-          <h2 class="service-title">Customer-Facing<br/>Products</h2>
-          <p class="service-desc">AI features and experiences your customers interact with — from first concept to App Store.</p>
-          <ul class="service-examples">
-            <li>Conversational interfaces</li>
-            <li>Personalization engines</li>
-            <li>0→1 product builds</li>
-          </ul>
-        </div>
-
+  <!-- LOGOS / TRUSTED BY -->
+  <section class="band" aria-label="Industries served">
+    <div class="wrap band-inner">
+      <span class="band-label">Working with</span>
+      <div class="band-list">
+        <span>Finance</span>
+        <span class="band-dot" aria-hidden="true"></span>
+        <span>Healthcare</span>
+        <span class="band-dot" aria-hidden="true"></span>
+        <span>Logistics</span>
+        <span class="band-dot" aria-hidden="true"></span>
+        <span>Consumer</span>
+        <span class="band-dot" aria-hidden="true"></span>
+        <span>Legal</span>
+        <span class="band-dot" aria-hidden="true"></span>
+        <span>Media</span>
       </div>
     </div>
   </section>
 
 
-  <!-- HOW WE WORK -->
-  <section class="section process-section" id="process">
+  <!-- SERVICES -->
+  <section class="section" id="services">
     <div class="wrap">
-      <p class="label reveal">How it works</p>
-      <div class="process-grid">
-        <div class="process-step reveal">
-          <span class="process-n" aria-hidden="true">01</span>
-          <h3>Understand</h3>
-          <p>We learn your business — the problem, the data, the constraints. No assumptions.</p>
-        </div>
-        <div class="process-arrow" aria-hidden="true">→</div>
-        <div class="process-step reveal">
-          <span class="process-n" aria-hidden="true">02</span>
-          <h3>Design &amp; build</h3>
-          <p>We prototype and engineer the right solution. Functional, not a deck.</p>
-        </div>
-        <div class="process-arrow" aria-hidden="true">→</div>
-        <div class="process-step reveal">
-          <span class="process-n" aria-hidden="true">03</span>
-          <h3>Ship</h3>
-          <p>Production software — tested, documented, deployed. You own everything.</p>
-        </div>
+      <div class="section-head">
+        <span class="eyebrow"><span class="eyebrow-dash"></span>01 — Services</span>
+        <h2 class="section-h">
+          Three kinds of software.<br/>
+          <span class="section-h-mute">All shipped end-to-end.</span>
+        </h2>
+      </div>
+
+      <div class="services">
+        <article class="svc">
+          <div class="svc-icon">
+            <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect x="3" y="8" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="23" y="8" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="13" y="22" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" fill="var(--accent)" fill-opacity="0.1"/>
+              <path d="M8 18 L13 26 M28 18 L23 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="svc-title">Workflow Automation</h3>
+          <p class="svc-desc">Replace slow manual operations with AI that runs 24/7.</p>
+          <ul class="svc-list">
+            <li>Document processing</li>
+            <li>Data extraction &amp; routing</li>
+            <li>Review &amp; approval pipelines</li>
+          </ul>
+        </article>
+
+        <article class="svc svc-feature">
+          <div class="svc-icon">
+            <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect x="4" y="6" width="28" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="4" y1="12" x2="32" y2="12" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="8" cy="9" r="0.8" fill="currentColor"/>
+              <circle cx="11" cy="9" r="0.8" fill="currentColor"/>
+              <rect x="8" y="16" width="10" height="10" rx="1.5" fill="var(--accent)" fill-opacity="0.15" stroke="var(--accent)" stroke-width="1.2"/>
+              <line x1="21" y1="17" x2="28" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="21" y1="21" x2="28" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="21" y1="25" x2="25" y2="25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="svc-title">Internal AI Tools</h3>
+          <p class="svc-desc">Dashboards, decision support, and research platforms for your team.</p>
+          <ul class="svc-list">
+            <li>Intelligence platforms</li>
+            <li>Analyst co-pilots</li>
+            <li>Operations dashboards</li>
+          </ul>
+        </article>
+
+        <article class="svc">
+          <div class="svc-icon">
+            <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect x="10" y="3" width="16" height="30" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="15" y1="30" x2="21" y2="30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="13" y="8" width="10" height="6" rx="1" fill="var(--accent)" fill-opacity="0.15" stroke="var(--accent)" stroke-width="1.2"/>
+              <line x1="13" y1="18" x2="22" y2="18" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              <line x1="13" y1="22" x2="20" y2="22" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              <line x1="13" y1="26" x2="18" y2="26" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="svc-title">Customer Products</h3>
+          <p class="svc-desc">AI features and experiences your customers actually use.</p>
+          <ul class="svc-list">
+            <li>Conversational interfaces</li>
+            <li>Personalization engines</li>
+            <li>0→1 product builds</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
 
   <!-- WORK -->
-  <section class="section" id="work">
+  <section class="section section-dark" id="work">
     <div class="wrap">
-      <p class="label reveal">Results</p>
-      <h2 class="section-h reveal">Three shipped.<br/><em>Measured.</em></h2>
+      <div class="section-head">
+        <span class="eyebrow eyebrow-light"><span class="eyebrow-dash"></span>02 — Work</span>
+        <h2 class="section-h section-h-light">
+          Shipped in production.<br/>
+          <span class="section-h-mute-light">Measured outcomes.</span>
+        </h2>
+      </div>
 
-      <div class="cases-grid">
+      <div class="cases">
 
-        <article class="case-card reveal">
-          <div class="case-top">
+        <article class="case">
+          <div class="case-head">
+            <span class="case-num">01</span>
             <span class="case-tag">Sales Automation</span>
-            <span class="case-dur">11 weeks</span>
           </div>
           <h3 class="case-name">Retain</h3>
-          <p class="case-line">AI sales agent replacing a 12-person SDR team.</p>
+          <p class="case-desc">AI sales agent replacing a 12-person SDR team. Responds to inbound in &lt;5s, qualifies, and routes to humans only to close.</p>
           <div class="case-metrics">
             <div class="metric">
-              <span class="metric-n">−74%</span>
+              <span class="metric-n">−74<span class="metric-u">%</span></span>
               <span class="metric-l">Cost per lead</span>
             </div>
             <div class="metric">
-              <span class="metric-n">&lt;5s</span>
-              <span class="metric-l">Response time</span>
+              <span class="metric-n">&lt;5<span class="metric-u">s</span></span>
+              <span class="metric-l">Response</span>
             </div>
             <div class="metric">
-              <span class="metric-n">38%</span>
+              <span class="metric-n">38<span class="metric-u">%</span></span>
               <span class="metric-l">Reply rate</span>
             </div>
           </div>
+          <div class="case-bar" aria-hidden="true">
+            <span class="case-dur">11 weeks</span>
+            <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 L11 3 M5 3 L11 3 L11 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+          </div>
         </article>
 
-        <article class="case-card reveal">
-          <div class="case-top">
+        <article class="case">
+          <div class="case-head">
+            <span class="case-num">02</span>
             <span class="case-tag">Research Platform</span>
-            <span class="case-dur">16 weeks</span>
           </div>
           <h3 class="case-name">Clinical Alpha</h3>
-          <p class="case-line">Multi-source AI research platform for biotech investors.</p>
+          <p class="case-desc">Multi-source AI research for biotech investors. Synthesizes trials, filings, and pipelines into one briefing per company.</p>
           <div class="case-metrics">
             <div class="metric">
-              <span class="metric-n">40×</span>
-              <span class="metric-l">Analyst output</span>
+              <span class="metric-n">40<span class="metric-u">×</span></span>
+              <span class="metric-l">Output</span>
             </div>
             <div class="metric">
-              <span class="metric-n">40h→1h</span>
-              <span class="metric-l">Research cycle</span>
+              <span class="metric-n">40→1<span class="metric-u">h</span></span>
+              <span class="metric-l">Cycle</span>
             </div>
             <div class="metric">
               <span class="metric-n">3</span>
               <span class="metric-l">Funds live</span>
             </div>
           </div>
+          <div class="case-bar" aria-hidden="true">
+            <span class="case-dur">16 weeks</span>
+            <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 L11 3 M5 3 L11 3 L11 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+          </div>
         </article>
 
-        <article class="case-card reveal">
-          <div class="case-top">
-            <span class="case-tag">Consumer Product</span>
-            <span class="case-dur">14 weeks</span>
+        <article class="case">
+          <div class="case-head">
+            <span class="case-num">03</span>
+            <span class="case-tag">Consumer 0→1</span>
           </div>
           <h3 class="case-name">Trip Spark</h3>
-          <p class="case-line">AI travel planner — iOS + web, 0 to launch.</p>
+          <p class="case-desc">Conversational AI travel planner — iOS + web. Doesn't just recommend, it books. Full stack shipped in one cycle.</p>
           <div class="case-metrics">
             <div class="metric">
-              <span class="metric-n">4.8★</span>
+              <span class="metric-n">4.8<span class="metric-u">★</span></span>
               <span class="metric-l">App Store</span>
             </div>
             <div class="metric">
-              <span class="metric-n">31%</span>
+              <span class="metric-n">31<span class="metric-u">%</span></span>
               <span class="metric-l">D7 retention</span>
             </div>
             <div class="metric">
-              <span class="metric-n">14wk</span>
-              <span class="metric-l">Time to launch</span>
+              <span class="metric-n">14<span class="metric-u">wk</span></span>
+              <span class="metric-l">To launch</span>
             </div>
+          </div>
+          <div class="case-bar" aria-hidden="true">
+            <span class="case-dur">14 weeks</span>
+            <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 L11 3 M5 3 L11 3 L11 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
           </div>
         </article>
 
@@ -234,70 +335,97 @@
   </section>
 
 
-  <!-- FIT -->
-  <section class="section fit-section" id="fit">
+  <!-- PROCESS -->
+  <section class="section" id="process">
     <div class="wrap">
-      <p class="label reveal">Is this you?</p>
-      <div class="fit-grid">
-        <div class="fit-col reveal">
-          <h3 class="fit-col-h fit-col-h--yes">Good fit</h3>
-          <ul class="fit-list">
-            <li>Real operational problem with real stakes</li>
-            <li>Data exists, or there's a clear path to it</li>
-            <li>You need software, not a strategy doc</li>
-            <li>Decision-maker available to collaborate</li>
-            <li>Ready to move in the next 30 days</li>
-          </ul>
-        </div>
-        <div class="fit-col reveal">
-          <h3 class="fit-col-h fit-col-h--no">Not a fit</h3>
-          <ul class="fit-list fit-list--no">
-            <li>Proof-of-concept with no path to production</li>
-            <li>Subcontracting for another agency</li>
-            <li>Budget not approved</li>
-            <li>Looking for someone to explain what AI is</li>
-          </ul>
-        </div>
+      <div class="section-head">
+        <span class="eyebrow"><span class="eyebrow-dash"></span>03 — Process</span>
+        <h2 class="section-h">
+          Three phases.<br/>
+          <span class="section-h-mute">No slides. No surprises.</span>
+        </h2>
       </div>
+
+      <ol class="phases">
+        <li class="phase">
+          <div class="phase-head">
+            <span class="phase-n">01</span>
+            <span class="phase-w">Week 1–2</span>
+          </div>
+          <h3 class="phase-title">Understand</h3>
+          <p class="phase-desc">We learn the business — the problem, the data, the constraints. By day fourteen we know what to build and what not to.</p>
+          <ul class="phase-deliverables">
+            <li>Problem definition</li>
+            <li>Success metrics</li>
+            <li>Technical plan</li>
+          </ul>
+        </li>
+        <li class="phase">
+          <div class="phase-head">
+            <span class="phase-n">02</span>
+            <span class="phase-w">Week 3–10</span>
+          </div>
+          <h3 class="phase-title">Build</h3>
+          <p class="phase-desc">Design, prototype, engineer. Weekly demos on real data. You see progress every week — not at the end.</p>
+          <ul class="phase-deliverables">
+            <li>Working software</li>
+            <li>Weekly demos</li>
+            <li>Production infrastructure</li>
+          </ul>
+        </li>
+        <li class="phase">
+          <div class="phase-head">
+            <span class="phase-n">03</span>
+            <span class="phase-w">Week 11+</span>
+          </div>
+          <h3 class="phase-title">Ship</h3>
+          <p class="phase-desc">Deploy, monitor, hand over. You own the code and the knowledge. We're on-call for the first month after launch.</p>
+          <ul class="phase-deliverables">
+            <li>Launch &amp; monitoring</li>
+            <li>Documentation</li>
+            <li>30-day support</li>
+          </ul>
+        </li>
+      </ol>
     </div>
   </section>
 
 
   <!-- CONTACT -->
-  <section class="section contact-section" id="contact">
-    <div class="wrap contact-inner">
-      <div class="contact-text">
-        <p class="label reveal">Start here</p>
-        <h2 class="contact-h reveal">
-          Tell us what's<br/><em>broken.</em>
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <div class="contact-pattern" aria-hidden="true">
+          <svg viewBox="0 0 200 200" fill="none">
+            <circle cx="100" cy="100" r="90" stroke="currentColor" stroke-opacity="0.08" stroke-width="1"/>
+            <circle cx="100" cy="100" r="60" stroke="currentColor" stroke-opacity="0.10" stroke-width="1"/>
+            <circle cx="100" cy="100" r="30" stroke="currentColor" stroke-opacity="0.14" stroke-width="1"/>
+            <circle cx="100" cy="100" r="8" fill="var(--accent)"/>
+          </svg>
+        </div>
+
+        <span class="eyebrow eyebrow-light"><span class="eyebrow-dash"></span>04 — Next</span>
+        <h2 class="contact-h">
+          Tell us what you're<br/>
+          <em>trying to ship.</em>
         </h2>
-        <p class="contact-sub reveal">
-          Send a paragraph. We reply within one business day.
+        <p class="contact-sub">
+          A paragraph or a PRD — whichever's closest at hand.
+          We reply within one business day.
         </p>
-        <a href="mailto:hello@scope.studio?subject=Project%20inquiry" class="contact-email reveal">
-          hello@scope.studio <span aria-hidden="true">↗</span>
-        </a>
-        <ul class="contact-chips reveal">
-          <li>
-            <span class="pulse" aria-hidden="true"></span>
-            2 seats open this quarter
-          </li>
+
+        <div class="contact-cta">
+          <a href="mailto:hello@scope.studio?subject=Project%20inquiry" class="btn btn-light">
+            hello@scope.studio
+            <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 7 H11.5 M8 3.5 L11.5 7 L8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </a>
+        </div>
+
+        <ul class="contact-chips">
+          <li><span class="chip-dot" aria-hidden="true"></span>2 seats open this quarter</li>
           <li>Reply &lt; 24h</li>
           <li>NDA on request</li>
         </ul>
-      </div>
-      <div class="contact-card reveal">
-        <div class="card-header">
-          <span class="card-ring" aria-hidden="true"></span>
-          <span>Scope Studio</span>
-        </div>
-        <div class="card-row"><span>Location</span><span>Los Angeles, CA</span></div>
-        <div class="card-row"><span>Founded</span><span>2023</span></div>
-        <div class="card-row"><span>Engagement</span><span>8 – 16 weeks</span></div>
-        <div class="card-row"><span>Disciplines</span><span>Product · Design · Eng</span></div>
-        <a href="mailto:hello@scope.studio?subject=Project%20inquiry" class="card-btn">
-          Start a conversation →
-        </a>
       </div>
     </div>
   </section>
@@ -306,13 +434,18 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div class="footer-l">
-        <span class="footer-ring" aria-hidden="true"></span>
-        <span class="footer-name">Scope Studio</span>
-        <span class="footer-sep" aria-hidden="true">·</span>
-        <span class="footer-loc">Los Angeles</span>
+      <div class="footer-brand">
+        <svg class="footer-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="26" height="26" rx="7" fill="currentColor" opacity="0.04" stroke="currentColor" stroke-opacity="0.14"/>
+          <circle cx="14" cy="14" r="6.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <circle cx="14" cy="14" r="2.2" fill="var(--accent)"/>
+        </svg>
+        <div class="footer-brand-text">
+          <span class="footer-brand-name">Scope Studio</span>
+          <span class="footer-brand-city">Los Angeles, CA</span>
+        </div>
       </div>
-      <div class="footer-r">
+      <div class="footer-meta">
         <a href="mailto:hello@scope.studio">hello@scope.studio</a>
         <span>© <span id="year">2026</span> Scope Studio, Inc.</span>
       </div>
